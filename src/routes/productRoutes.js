@@ -10,8 +10,7 @@ productRouter.post('/', (req, res) => {
 res.send(`Create a new product with ID: ${req.body.id}`)
 });
 productRouter.patch('/:id', (req, res) => {
-res.send(`Update the product ${req.params.id} with the values of ${req.body.name}, ${req.body.price} and
-${req.body.qty}`)
+res.send(`Update the product ${req.params.id} with the values of ${req.body.name}, ${req.body.price} and ${req.body.qty}`)
 });
 productRouter.delete('/', (req, res) => {
 res.send(`Deleting the product ${req.body.id}`)
